@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: #f1f1f1;;
+
+}
+
+/* Header */
+.header {
+  padding: 12px;
+  text-align: center;
+  background-color:white ;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ border-color:dodgerblue;
+ 
+
+ 
+}
+
+.header h1 {
+  font-size: 50px;
+ color:dodgerblue;
+  font-family: 'Calligraffitti', cursive;
+}
+
+/* top navigation */
+.topnav {
+  overflow: hidden;
+  background-color: dodgerblue;
+   position: sticky;
+   top:0;
+ box-shadow:  0px 0 10px 0 black;
+
+}
+
+/* topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:18px;
+}
+
+/* color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: dodgerblue;
+}
+
+
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+  
+}
+
+/* Fake image */
+.fakeimg {
+
+  width: 100%;
+  padding: 20px;
+
+ 
+
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+ 
+} 	.model{
+	
+   background-color:white;
+   text-align: center;
+   margin-top:12px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      	
+	
+	} button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: dodgerblue;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  
+  font-size: 18px;
+} a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+} .model img:hover{
+
+ opacity:0.7;
+
+
+}.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+   margin-right:12px;
+   text-align:center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+ 
+} 
+.text {
+  background-color: dodgerblue;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+} .image {
+  opacity: 1;
+  display: block;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+} 
+.model:hover .image {
+  opacity: 0.3;
+}
+
+.model:hover .middle {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 12px 12px;
+  background: dodgerblue;
+  height:auto;
+  width:100%;
+float:left;
+ margin-top:20px;
+ bottom:0;
+ box-shadow:  0px 0 10px 0 black;
+  
+
+}
+
+.footer p {
+color:white;
+ font-size:16px;
+font-weight:bold;
+float:left;
+line-height:1.6;
+}
+.footer ul {
+float:right;padding-right:30px;color:white;list-style-type:none;
+font-weight:bold;
+line-height:1.6;
+
+} .footer h1{
+
+text-align:center;
+font-size:50px;
+font-weight:bold;
+color:white;
+padding-top:20px;
+padding:12px;
+  font-family: 'Calligraffitti', cursive;
+
+
+}
+
+/* Responsive layout  */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
